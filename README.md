@@ -52,6 +52,11 @@ back to previous page:--
 
 ![image](https://github.com/deemalvidarshana/Mail-CRUD-Application/assets/155978063/a88caf09-bd09-458b-9b0a-47a6a5c8d395)
 
+view:--
+
+![image](https://github.com/deemalvidarshana/Mail-CRUD-Application/assets/155978063/091398ab-8ad7-48a7-a196-3b5848799653)
+
+
 read file:--
 
 ![image](https://github.com/deemalvidarshana/Mail-CRUD-Application/assets/155978063/57529620-0a1a-4213-a371-8997f33752ff)
