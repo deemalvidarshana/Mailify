@@ -1,59 +1,56 @@
-index page:----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Email</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 20px;
+        }
+        .container {
+            max-width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Create New Email</h2>
+        <form id="createEmailForm">
+            <div class="form-group">
+                <label for="toEmail">To:</label>
+                <input type="email" class="form-control" id="toEmail" placeholder="Enter recipient's email" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject:</label>
+                <input type="text" class="form-control" id="subject" placeholder="Email subject" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Write your message here" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Email</button>
+        </form>
+    </div>
 
-![image](https://github.com/deemalvidarshana/Mail-CRUD-Application/assets/155978063/02c0321f-6ef8-47cb-bcc9-13cf8e8c6646)
-
-Create a New mail page:---
-![image](https://github.com/deemalvidarshana/Mail-CRUD-Application/assets/155978063/a153d0ee-db22-4f91-9d88-90d787b410aa)
-
-![image](https://github.com/deemalvidarshana/Mail-CRUD-Application/assets/155978063/b05cd72b-c4a9-4ebd-a03b-ca47ae4ae265)
-
-![image](https://github.com/deemalvidarshana/Mail-CRUD-Application/assets/155978063/1ae41f88-a7aa-4671-86bf-9c7753cbc0e0)
-
-Read Email:---
-
-![image](https://github.com/deemalvidarshana/Mail-CRUD-Application/assets/155978063/dffd3d13-04e2-46ec-96cd-661c4f09102f)
-
-![image](https://github.com/deemalvidarshana/Mail-CRUD-Application/assets/155978063/88bfd2db-c38c-4eaf-be4d-73bb135a24e2)
-
-Home :---
-
-![image](https://github.com/deemalvidarshana/Mail-CRUD-Application/assets/155978063/c7c6fa2a-55c6-4f26-8f13-1483b8b90266)
-
-Home/View page:---
-
-![image](https://github.com/deemalvidarshana/Mail-CRUD-Application/assets/155978063/cb509ccd-10c2-401b-8b01-102aac9963cc)
-
-Home/View/edit page:---
-
-![image](https://github.com/deemalvidarshana/Mail-CRUD-Application/assets/155978063/8835027a-2bdd-4784-b22b-bec151d0b819)
-
-![image](https://github.com/deemalvidarshana/Mail-CRUD-Application/assets/155978063/a095b017-7c0c-4b1c-8fcd-f23f80aa9b51)
-
-![image](https://github.com/deemalvidarshana/Mail-CRUD-Application/assets/155978063/292095e3-a34c-4f52-a10c-26e52a2d9882)
-
-Back to View:-
-
-![image](https://github.com/deemalvidarshana/Mail-CRUD-Application/assets/155978063/c71fbec2-330d-458a-9c2a-4ea0cf701208)
-
-File:-
-
-![image](https://github.com/deemalvidarshana/Mail-CRUD-Application/assets/155978063/3031d60d-8449-4262-8015-88f1d34cc5b2)
-
-Create a File:---
-
-![image](https://github.com/deemalvidarshana/Mail-CRUD-Application/assets/155978063/7015779c-359d-462e-9adf-ee22882d4fc5)
-
-![image](https://github.com/deemalvidarshana/Mail-CRUD-Application/assets/155978063/8c3e5411-aa40-4136-b7f5-f89d4bf7ecab)
-
-back to previous page:--
-
-![image](https://github.com/deemalvidarshana/Mail-CRUD-Application/assets/155978063/a88caf09-bd09-458b-9b0a-47a6a5c8d395)
-
-view:--
-
-![image](https://github.com/deemalvidarshana/Mail-CRUD-Application/assets/155978063/091398ab-8ad7-48a7-a196-3b5848799653)
-
-
-read file:--
-
-![image](https://github.com/deemalvidarshana/Mail-CRUD-Application/assets/155978063/57529620-0a1a-4213-a371-8997f33752ff)
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#createEmailForm').on('submit', function(e) {
+                e.preventDefault();
+                // Here you would typically grab the form data and send it to the server
+                // For demonstration, we'll just log it to the console
+                console.log({
+                    toEmail: $('#toEmail').val(),
+                    subject: $('#subject').val(),
+                    message: $('#message').val()
+                });
+                alert('Email sent! (simulated for this example)');
+            });
+        });
+    </script>
+</body>
+</html>
